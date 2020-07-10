@@ -1,13 +1,13 @@
-package com.testing.testing;
+package com.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TestingApplication {
+public class CalculatorApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TestingApplication.class, args);
+		SpringApplication.run(CalculatorApplication.class, args);
 	}
 
 }
