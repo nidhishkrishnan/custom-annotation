@@ -4,7 +4,7 @@ plugins {
 	id 'java'
 }
 
-group 'com.custom-annotation'
+group 'com.example'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
