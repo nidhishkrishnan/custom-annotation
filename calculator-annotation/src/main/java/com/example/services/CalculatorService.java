@@ -1,10 +1,14 @@
 package com.example.services;
 
 import com.example.calculator.annotations.Calculate;
+import com.example.calculator.processor.CalculatorProcessor;
 
-import static com.example.calculator.domains.Method.*;
+import static com.example.calculator.domains.Method.ADD;
+import static com.example.calculator.domains.Method.DIV;
+import static com.example.calculator.domains.Method.MUL;
+import static com.example.calculator.domains.Method.SUB;
 
-public interface CalculatorService {
+public interface CalculatorService extends CalculatorProcessor {
 
    @Calculate(method = ADD)
    int addNumbers(int firstNumber, int secondNumber);
