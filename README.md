@@ -53,6 +53,8 @@ found interface. Every method will be transformed into a calculate-processor-def
 
 **CalculatorApplication.java**
 
+Add `@EnableCalculatorProcessor` for enabling the Calculator Annotation
+
 ```java
 @SpringBootApplication
 @EnableCalculatorProcessor("com.example.services")
@@ -65,6 +67,8 @@ public class CalculatorApplication {
 
 **CalculatorService.java**
 
+Create an interface which extends `CalculatorProcessor` and add `@Calculate` to the an abstract method
+
 ```java
 public interface CalculatorService extends CalculatorProcessor {
 
@@ -73,6 +77,8 @@ public interface CalculatorService extends CalculatorProcessor {
 }
 ```
 **CalculatorController.java**
+
+Inject or Autowire the `CalculatorService` and call `addNumbers` directly passing the values
 
 ```java
 public class CalculatorController {
