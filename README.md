@@ -47,7 +47,7 @@ found interface. Every method will be transformed into a calculate-processor-def
 
 - Only two integer parameters are supported
 - Only integer return type is supported 
-- `@Calculcate` annotation supports only `ADD` (Addition), `SUB` (Subtraction), `DIV` (Division), `MUL` (Multiplication).
+- `@Calculcate` annotation supports only four methods: `ADD` (Addition), `SUB` (Subtraction), `DIV` (Division), `MUL` (Multiplication).
 
 ## Example
 
