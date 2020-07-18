@@ -53,7 +53,7 @@ found interface. Every method will be transformed into a calculate-processor-def
 
 **CalculatorApplication.java**
 
-```
+```java
 @SpringBootApplication
 @EnableCalculatorProcessor("com.example.services")
 public class CalculatorApplication {
@@ -65,7 +65,7 @@ public class CalculatorApplication {
 
 **CalculatorService.java**
 
-```
+```java
 public interface CalculatorService extends CalculatorProcessor {
 
    @Calculate(method = ADD)
@@ -73,7 +73,8 @@ public interface CalculatorService extends CalculatorProcessor {
 }
 ```
 **CalculatorController.java**
-```
+
+```java
 public class CalculatorController {
 
     @Autowired
