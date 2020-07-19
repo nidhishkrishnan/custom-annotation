@@ -1,6 +1,6 @@
 # Calculator Custom Java Annotation (@Calculate, @EnableCalculatorProcessor)
 
-This example (calculator-annotation) implements the similar annotation mechanism as [Spring Data JPA Repositories](https://docs.spring.io/spring-data/jpa/docs/2.3.1.RELEASE/reference/html/#jpa.repositories).
+This example (calculator-annotation) implements the similar annotation mechanism of [Spring Data JPA Repositories](https://docs.spring.io/spring-data/jpa/docs/2.3.1.RELEASE/reference/html/#jpa.repositories).
 That is, a classpath-scanner searches for specific interfaces and creates a proxy for all found interfaces. 
 Every method should need two integer parameter and integer return type. This proxy can then be `@Autowired` into your classes.
 
