@@ -92,3 +92,7 @@ public class CalculatorController {
     }
 }
 ```
+
+## License
+
+See [LICENSE](LICENSE) file.
